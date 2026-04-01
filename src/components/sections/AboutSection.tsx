@@ -1,75 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useCallback } from "react";
+
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Badge } from "@/components/ui/Badge";
 import { useScrollReveal } from "@/components/hooks/useScrollReveal";
-import {
-  buildBlobPath,
-  randomBlobPoints,
-  lerpPoints,
-  easeInOut,
-  type Point,
-} from "@/lib/utils";
+
 import { TIMELINE } from "@/data";
 import type { TimelineEntry } from "@/types";
 
-// ─── Card Blob ────────────────────────────────────────────────────────────────
 
-function CardBlob() {
-  const pathRef = useRef<SVGPathElement | null>(null);
-  const rafRef = useRef<number | null>(null);
-  const blobPts = useRef<Point[]>(randomBlobPoints(200, 200, 160, 7));
-  const targetPts = useRef<Point[]>(randomBlobPoints(200, 200, 160, 7));
-  const blobT = useRef(0);
 
-  const animate = useCallback(() => {
-    blobT.current += 0.003;
-    if (blobT.current >= 1) {
-      blobT.current = 0;
-      blobPts.current = targetPts.current;
-      targetPts.current = randomBlobPoints(200, 200, 150, 7);
-    }
-    const current = lerpPoints(
-      blobPts.current,
-      targetPts.current,
-      easeInOut(blobT.current)
-    );
-    if (pathRef.current) {
-      pathRef.current.setAttribute("d", buildBlobPath(current));
-    }
-    rafRef.current = requestAnimationFrame(animate);
-  }, []);
-
-  useEffect(() => {
-    rafRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, [animate]);
-
-  return (
-    <div
-      className="absolute bottom-[-140px] right-[-110px] w-[380px] h-[380px] pointer-events-none opacity-20"
-      aria-hidden="true"
-    >
-      <svg
-        viewBox="0 0 400 400"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-full"
-      >
-        <defs>
-          <linearGradient id="cardBlobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-           <stop offset="0%" stopColor="#3dd9eb" />
-            <stop offset="50%" stopColor="#3dd9eb" />
-            <stop offset="100%" stopColor="#3dd9eb" />
-          </linearGradient>
-        </defs>
-        <path ref={pathRef} fill="url(#cardBlobGrad)" />
-      </svg>
-    </div>
-  );
-}
 
 // ─── Timeline Item ────────────────────────────────────────────────────────────
 
