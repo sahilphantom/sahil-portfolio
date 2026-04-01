@@ -41,8 +41,8 @@ export function Navbar() {
       {/* Logo */}
       <Link
         href="/"
-        className="font-syne font-extrabold text-[18px] tracking-tight text-text no-underline"
-        aria-label="Alex Nova — home"
+        className="font-syne font-extrabold text-[28px] italic tracking-tight text-text no-underline"
+        aria-label="Sahil — home"
       >
         SAHIL<span className="text-lime">.</span>
       </Link>
