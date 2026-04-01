@@ -38,6 +38,11 @@ export type PhosphorIconName =
   | "CubeFocus"
   | "BrainCircuit"
   | "Shapes"
+  | "CloudArrowUp"
+  | "Cpu"
+  | "Server"
+  | "GitBranch"
+  | "Sparkles"
   | "ChartLineUp";
 
 export interface SkillCard {

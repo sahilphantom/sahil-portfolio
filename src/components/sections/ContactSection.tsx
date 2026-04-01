@@ -3,12 +3,13 @@
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Button } from "@/components/ui/Button";
 import { useScrollReveal } from "@/components/hooks/useScrollReveal";
+import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
 
 const CV_PATH = "/sahil-cv.pdf";
 
 const SOCIALS = [
-  { label: "GitHub", icon: "⌨", href: "https://github.com/sahilphantom" },
-  { label: "LinkedIn", icon: "in", href: "https://www.linkedin.com/in/sahil-mahmood-b50159337/" },
+  { label: "GitHub", icon: <GithubLogoIcon className="size-5" />, href: "https://github.com/sahilphantom" },
+  { label: "LinkedIn", icon: <LinkedinLogoIcon className="size-5" />, href: "https://www.linkedin.com/in/sahil-mahmood-b50159337/" },
 ];
 
 export function ContactSection() {
@@ -37,14 +38,14 @@ export function ContactSection() {
       />
 
       <div ref={revealRef} className="reveal-on-scroll relative z-10">
-        <SectionLabel  className="!text-[#FF5C4D]" centered>Get In Touch</SectionLabel>
+        <SectionLabel  color="#FF5C4D" centered>Get In Touch</SectionLabel>
 
         <h2
           className="font-syne font-extrabold tracking-tightest leading-[0.95] mt-4 mb-6"
           style={{ fontSize: "clamp(48px,8vw,110px)" }}
         >
           Let&apos;s build{" "}
-          <span className="text-lime">something great.</span>
+          <span className="text-lime italic">something great.</span>
         </h2>
 
         <p className="text-text-muted text-[18px] font-dm mb-12 max-w-md mx-auto leading-relaxed">
@@ -81,7 +82,7 @@ export function ContactSection() {
               aria-label={s.label}
               className={[
                 "flex items-center gap-2 px-5 py-2.5 rounded-full",
-                "bg-surface border border-white/7 text-text-muted text-[13px]",
+                "bg-surface border border-white/7 text-text-muted text-[16px]",
                 "hover:border-white/20 hover:text-text",
                 "transition-all duration-200 font-dm",
               ].join(" ")}

@@ -17,6 +17,7 @@ import {
 import { cn } from "@/lib/utils";
 import { SKILLS } from "@/data";
 import type { SkillCard } from "@/types";
+import { CloudArrowUpIcon } from "@phosphor-icons/react/dist/ssr";
 
 // ─── Icon Map ────────────────────────────────────────────────────────────────
 
@@ -28,7 +29,7 @@ const ICON_MAP: Record<string, React.ComponentType<any>> = {
   Robot,
   Palette,
   TrendUp,
-  Server: HardDrive,
+  Server: CloudArrowUpIcon,
   Cpu,
   GitBranch,
   Sparkles: Sparkle,
@@ -152,9 +153,7 @@ export function SkillsSection() {
           className="font-syne font-extrabold tracking-tighter leading-[1.0]"
           style={{ fontSize: "clamp(36px,5vw,60px)" }}
         >
-          Craft across
-          <br />
-          the full stack
+          Craft across <span className="text-text-muted italic">the full stack.</span>
         </h2>
       </div>
 

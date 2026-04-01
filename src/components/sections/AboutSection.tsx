@@ -103,7 +103,7 @@ export function AboutSection() {
             style={{ fontSize: "clamp(36px,5vw,60px)" }}
           >
             Builder at heart.{" "}
-            <span className="text-text-muted">Engineer by trade.</span>
+            <span className="text-text-muted italic">Engineer by trade.</span>
           </h2>
 
           <p className="text-text-muted text-[16px] leading-[1.8] mb-6 font-dm">

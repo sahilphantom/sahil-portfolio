@@ -17,6 +17,7 @@ const CATS = [
       { n: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6",   lvl: "Good"   },
       { n: "Redux",      icon: "https://cdn.simpleicons.org/redux/764ABC",        lvl: "Good"   },
       { n: "Zustand",    icon: "/images/zustand.svg",      lvl: "Good"   },
+       { n: "Zod",      icon: "/tech-icons/zod.svg",         lvl: "Good"   },
       { n: "Tailwind",   icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4",  lvl: "Strong" },
     ],
   },
@@ -28,8 +29,12 @@ const CATS = [
       { n: "Express.js", icon: "https://cdn.simpleicons.org/express/ffffff",      lvl: "Strong" },
       { n: "FastAPI",    icon: "https://cdn.simpleicons.org/fastapi/009688",      lvl: "Good"   },
       { n: "Python",     icon: "https://cdn.simpleicons.org/python/3776AB",       lvl: "Good"   },
+       { n: "Drizzle",      icon: "/tech-icons/drizzle-orm.svg",         lvl: "Good"   },
       { n: "MongoDB",    icon: "https://cdn.simpleicons.org/mongodb/47A248",      lvl: "Strong" },
       { n: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql/4169E1",   lvl: "Good"   },
+      { n: "Quadrant",      icon: "/tech-icons/qdrantdb.svg",         lvl: "Good"   },
+
+
       { n: "Redis",      icon: "https://cdn.simpleicons.org/redis/DC382D",        lvl: "Good"   },
     ],
   },
@@ -38,8 +43,8 @@ const CATS = [
     label: "AI & Automation",
     items: [
       { n: "LangChain",  icon: "https://cdn.simpleicons.org/langchain/3dd9eb",    lvl: "Strong" },
-      { n: "LangGraph",  icon: "",    lvl: "Good"   },
-      { n: "LangSmith",  icon: "",    lvl: "Good"   },
+      { n: "LangGraph",  icon: "/tech-icons/langgraph-white.svg",    lvl: "Good"   },
+     
       { n: "n8n",        icon: "https://cdn.simpleicons.org/n8n/EA4B71",          lvl: "Good"   },
     ],
   },
@@ -51,6 +56,7 @@ const CATS = [
       { n: "Git",        icon: "https://cdn.simpleicons.org/git/F05032",           lvl: "Strong" },
       { n: "GitHub",     icon: "https://cdn.simpleicons.org/github/ffffff",        lvl: "Strong" },
       { n: "Postman",    icon: "https://cdn.simpleicons.org/postman/FF6C37",       lvl: "Good"   },
+      { n: "Vercel",     icon: "/tech-icons/vercel-white.svg",         lvl: "Good"   },
     //   { n: "Apidog",     icon: "/images/Apidog.svg",       lvl: "Good"   },
     ],
   },
@@ -109,12 +115,12 @@ function TechCard({ item }: { item: { n: string; icon: string; lvl: string } }) 
       <p className="text-[12px] font-semibold text-text font-mono leading-tight">{item.n}</p>
 
       {/* Level */}
-      <span
+      {/* <span
         className="text-[10px] font-semibold tracking-[0.06em] uppercase px-2 py-0.5 rounded-md"
         style={{ background: ls.bg, color: ls.color }}
       >
         {item.lvl}
-      </span>
+      </span> */}
     </div>
   );
 }

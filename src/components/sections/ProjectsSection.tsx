@@ -31,7 +31,7 @@ export function ProjectsSection() {
         style={{ fontSize: "clamp(32px,5vw,60px)" }}
       >
         Projects I&apos;m{" "}
-        <span className="text-text-muted">proud of.</span>
+        <span className="text-text-muted italic">proud of.</span>
       </h2>
 
       <div ref={revealRef} className="reveal-on-scroll flex flex-col gap-5">

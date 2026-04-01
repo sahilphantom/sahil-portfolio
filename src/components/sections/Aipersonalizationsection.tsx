@@ -77,7 +77,7 @@ export function AiPersonalizationSection() {
             >
               Personalized
               <br />
-              <em className="text-lime not-italic">intro.</em>
+              <em className="text-lime italic">intro.</em>
             </h2>
           </div>
           <p className="text-text-muted text-[14px] sm:text-[15px] leading-[1.85] font-dm">
