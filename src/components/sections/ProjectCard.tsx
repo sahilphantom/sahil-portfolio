@@ -49,7 +49,7 @@ function FeaturedCard({ project }: { project: Project }) {
       {/* Right — content */}
       <div className="p-8 flex flex-col justify-center">
         <p
-          className="text-[11px] font-semibold tracking-[0.1em] uppercase mb-3 font-dm"
+          className="text-[11px] font-semibold tracking-[0.1em] uppercase mb-3 font-fraunces"
           style={{ color: categoryColor }}
         >
           {project.category}
@@ -139,7 +139,7 @@ export function ProjectCard({ project, className, featured }: ProjectCardProps) 
       {/* Body */}
       <div className="p-6 flex flex-col flex-1">
         <p
-          className="text-[11px] font-semibold tracking-[0.1em] uppercase mb-2 font-dm"
+          className="text-[11px] font-semibold tracking-[0.1em] uppercase mb-2 font-fraunces"
           style={{ color: categoryColor }}
         >
           {project.category}

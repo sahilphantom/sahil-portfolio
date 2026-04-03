@@ -218,7 +218,7 @@ export function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-syne font-extrabold leading-[0.95] tracking-tightest mt-6 sm:mt-8">
+          <h1 className="font-fraunces font-extrabold leading-[0.95] tracking-tightest mt-6 sm:mt-8">
             <span className="block text-[clamp(42px,7vw,82px)]">
               Build systems
             </span>

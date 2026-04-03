@@ -72,7 +72,7 @@ export function AiPersonalizationSection() {
           <div>
             <SectionLabel color="#B57BFF" >Tailored for different roles</SectionLabel>
             <h2
-              className="font-syne font-extrabold tracking-tighter leading-[1.05] mt-4"
+              className="font-fraunces font-extrabold tracking-tighter leading-[1.05] mt-4"
               style={{ fontSize: "clamp(32px,5vw,44px)" }}
             >
               Personalized

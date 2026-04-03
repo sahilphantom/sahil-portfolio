@@ -25,6 +25,8 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
+  font-family:
+    var(--font-instrument), sans-serif; /* Instrument Sans as default */
   overflow-x: hidden;
   cursor: none;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +38,18 @@ button,
 input,
 textarea {
   cursor: none;
+}
+
+/* ─── Typography Helpers ────────────────────────────────────────────────────── */
+
+/* Use font-fraunces in Tailwind, or .font-display in raw CSS */
+.font-display {
+  font-family: var(--font-fraunces), serif;
+}
+
+/* Use font-instrument in Tailwind, or .font-body in raw CSS */
+.font-body {
+  font-family: var(--font-instrument), sans-serif;
 }
 
 /* ─── Custom Cursor ─────────────────────────────────────────────────────────── */

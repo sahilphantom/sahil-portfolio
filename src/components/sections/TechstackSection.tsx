@@ -166,11 +166,11 @@ export default function TechStackSection() {
       className="py-24 px-4 sm:px-6 md:px-12 bg-bg border-t border-white/7"
       aria-label="Tech Stack"
     >
-      <SectionLabel color="#FF5C4D">What I build with</SectionLabel>
+      <SectionLabel  color="#FF5C4D">What I build with</SectionLabel>
 
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
         <h2
-          className="font-syne font-extrabold tracking-tighter leading-[1.05]"
+          className="font-fraunces font-extrabold tracking-tighter leading-[1.05]"
           style={{ fontSize: "clamp(32px,5vw,60px)" }}
         >
           Built with{" "}

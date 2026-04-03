@@ -145,12 +145,12 @@ export function SkillsSection() {
             : "opacity-0 translate-y-6"
         )}
       >
-        <p className="flex items-center gap-2.5 text-lime text-[11px] font-semibold tracking-[0.12em] uppercase font-dm mb-4">
+        <p className="flex items-center gap-2.5 text-lime text-[11px] font-semibold tracking-[0.12em] uppercase font-fraunces mb-4">
           <span className="block w-6 h-px bg-lime" />
           What I bring
         </p>
         <h2
-          className="font-syne font-extrabold tracking-tighter leading-[1.0]"
+          className="font-fraunces font-extrabold tracking-tighter leading-[1.0]"
           style={{ fontSize: "clamp(36px,5vw,60px)" }}
         >
           Craft across <span className="text-text-muted italic">the full stack.</span>

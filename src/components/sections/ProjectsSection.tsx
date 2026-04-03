@@ -27,7 +27,7 @@ export function ProjectsSection() {
       <SectionLabel color="#F5C542">Selected Work</SectionLabel>
 
       <h2
-        className="font-syne font-extrabold tracking-tighter leading-[1.05] mb-12"
+        className="font-fraunces font-extrabold tracking-tighter leading-[1.05] mb-12"
         style={{ fontSize: "clamp(32px,5vw,60px)" }}
       >
         Projects I&apos;m{" "}

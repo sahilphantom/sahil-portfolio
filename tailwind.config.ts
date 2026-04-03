@@ -23,8 +23,8 @@ const config: Config = {
         border: "rgba(255,255,255,0.07)",
       },
       fontFamily: {
-        syne: ["var(--font-syne)", "sans-serif"],
-        dm: ["var(--font-dm-sans)", "sans-serif"],
+        fraunces: ["var(--font-fraunces)", "serif"],
+        instrument: ["var(--font-instrument)", "sans-serif"],
       },
       letterSpacing: {
         tightest: "-0.04em",

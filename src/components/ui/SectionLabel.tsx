@@ -17,7 +17,7 @@ export function SectionLabel({
     <div
       className={cn(
         "flex items-center gap-2.5",
-        "text-[11px] font-semibold tracking-widest uppercase font-dm",
+        "text-[11px] font-semibold tracking-widest uppercase font-fraunces",
         "mb-4",
         centered && "justify-center",
         className
