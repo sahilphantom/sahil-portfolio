@@ -40,7 +40,7 @@ export function Badge({
       className={cn(
         "inline-flex items-center gap-2 border rounded-full",
         "text-[12px] font-medium tracking-wider px-4 py-1.5",
-        "font-dm",
+        "font-fraunces",
         variantClasses[variant],
         className
       )}
@@ -48,7 +48,7 @@ export function Badge({
       {dot && (
         <span
           className={cn(
-            "w-1.5 h-1.5 rounded-full flex-shrink-0",
+            "w-1.5 h-1.5  rounded-full flex-shrink-0",
             dotColors[variant],
             animateDot && "animate-blink"
           )}

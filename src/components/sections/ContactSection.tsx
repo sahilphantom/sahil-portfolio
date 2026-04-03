@@ -41,7 +41,7 @@ export function ContactSection() {
         <SectionLabel  color="#FF5C4D" centered>Get In Touch</SectionLabel>
 
         <h2
-          className="font-syne font-extrabold tracking-tightest leading-[0.95] mt-4 mb-6"
+          className="font-fraunces font-extrabold tracking-tightest leading-[0.95] mt-4 mb-6"
           style={{ fontSize: "clamp(48px,8vw,110px)" }}
         >
           Let&apos;s build{" "}

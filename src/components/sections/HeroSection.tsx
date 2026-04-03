@@ -260,7 +260,7 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-<div className="grid grid-cols-2 place-items-center sm:flex sm:flex-wrap sm:justify-center lg:justify-start gap-6 sm:gap-10 mt-10 sm:mt-16 pt-8 sm:pt-10 border-t border-white/7">
+<div className="grid grid-cols-2 font-fraunces place-items-center sm:flex sm:flex-wrap sm:justify-center lg:justify-start gap-6 sm:gap-10 mt-10 sm:mt-16 pt-8 sm:pt-10 border-t border-white/7">
   {STATS.map((s) => (
     <StatItem key={s.label} {...s} />
   ))}

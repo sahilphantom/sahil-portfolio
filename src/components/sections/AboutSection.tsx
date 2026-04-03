@@ -17,13 +17,13 @@ function TimelineItem({ entry }: { entry: TimelineEntry }) {
   return (
     <div className="timeline-item pl-7 relative mb-9 group">
       <div className="timeline-dot" />
-      <p className="text-[11px] text-text-muted tracking-widest uppercase mb-1 font-dm">
+      <p className="text-[11px] text-text-muted tracking-widest uppercase mb-1 font-fraunces">
         {entry.year}
       </p>
-      <h4 className="font-syne font-bold text-[17px] mb-0.5">
+      <h4 className="font-fraunces font-bold text-[17px] mb-0.5">
         {entry.title}
       </h4>
-      <p className="text-[13px] text-lime font-medium mb-1.5">{entry.company}</p>
+      <p className="text-[13px] text-lime font-medium mb-1.5 ">{entry.company}</p>
       <p className="text-[13px] text-text-muted leading-relaxed">
         {entry.description}
       </p>
@@ -54,9 +54,9 @@ function AboutVisual() {
 
       {/* Initials */}
       <span
-        className="relative z-10 font-syne font-extrabold select-none leading-none"
+        className="relative z-10 font-fraunces font-extrabold select-none leading-none"
         style={{
-          fontSize: "120px",
+          fontSize: "130px",
           color: "rgba(255,255,255,0.05)",
           letterSpacing: "-0.08em",
         }}
@@ -66,7 +66,7 @@ function AboutVisual() {
       </span>
 
       {/* Location badge */}
-      <div className="absolute bottom-6 right-6 z-10 bg-lime text-black px-5 py-2.5 rounded-full font-syne text-[13px] font-bold">
+      <div className="absolute bottom-6 right-6 z-10 bg-lime text-black px-5 py-2.5 rounded-full font-fraunces text-[13px] font-bold">
         Pakistan 🇵🇰
       </div>
     </div>
@@ -99,7 +99,7 @@ export function AboutSection() {
         <div>
           <SectionLabel color="#7EE8A2">About</SectionLabel>
           <h2
-            className="font-syne font-extrabold tracking-tighter leading-[1.05] mb-8"
+            className="font-fraunces font-extrabold tracking-tighter leading-[1.05] mb-8"
             style={{ fontSize: "clamp(36px,5vw,60px)" }}
           >
             Builder at heart.{" "}

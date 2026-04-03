@@ -41,7 +41,7 @@ export function Navbar() {
       {/* Logo */}
       <Link
         href="/"
-        className="font-syne font-extrabold text-[28px] italic tracking-tight text-text no-underline"
+        className="font-fraunces font-extrabold text-[28px] italic tracking-tight text-text no-underline"
         aria-label="Sahil — home"
       >
         SAHIL<span className="text-lime">.</span>
@@ -57,7 +57,7 @@ export function Navbar() {
             className={cn(
               "text-text-muted text-[13px] font-medium tracking-wide uppercase",
               "transition-colors duration-200 hover:text-text",
-              "font-dm"
+              "font-instrument"
             )}
           >
             {link.label}

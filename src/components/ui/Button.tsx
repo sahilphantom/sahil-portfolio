@@ -18,15 +18,15 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: [
-    "bg-lime text-black border-transparent font-syne font-bold",
+    "bg-lime text-black border-transparent font-fraunces font-bold",
     "hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(61,217,235,0.3)]",
   ].join(" "),
   secondary: [
-    "bg-transparent text-text border border-white/10 font-syne font-semibold",
+    "bg-transparent text-text border border-white/10 font-fraunces font-semibold",
     "hover:border-white/20 hover:bg-white/[0.04]",
   ].join(" "),
   ghost: [
-    "bg-transparent text-text-muted border border-white/7 font-dm font-medium",
+    "bg-transparent text-text-muted border border-white/7 font-fraunces font-medium",
     "hover:border-white/20 hover:text-text",
   ].join(" "),
 };
