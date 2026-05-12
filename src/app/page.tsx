@@ -16,7 +16,7 @@ export default function HomePage() {
       <TechStackSection />
       <AiPersonalizationSection />
       <ProjectsSection />
-      {/* <TestimonialsSection /> */}
+     
       <AboutSection />
       <ContactSection />
       <Footer />
