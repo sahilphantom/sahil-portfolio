@@ -324,20 +324,13 @@ export const TESTIMONIALS: Testimonial[] = [
 export const TIMELINE: TimelineEntry[] = [
   {
     id: "mozzine",
-    year: "Jan 2026 - Present",
+    year: "Oct 2025 - Present",
     title: "Junior Frontend Developer",
     company: "Mozzine Technologies",
     description:
       "Building modern frontend interfaces and contributing to production web applications as part of the core dev team.",
   },
-  {
-    id: "codeexpert-fullstack",
-    year: "Oct - Nov 2025",
-    title: "Full Stack Web Developer",
-    company: "Code Expert",
-    description:
-      "Worked as a full stack developer building and maintaining web applications using the MERN stack.",
-  },
+  
   {
     id: "codeexpert-intern",
     year: "Jul - Sep 2025",
