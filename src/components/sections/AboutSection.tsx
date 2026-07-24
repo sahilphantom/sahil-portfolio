@@ -7,6 +7,7 @@ import { useScrollReveal } from "@/components/hooks/useScrollReveal";
 
 import { TIMELINE } from "@/data";
 import type { TimelineEntry } from "@/types";
+import { BlobCanvas } from "./BlobCanvas";
 
 
 
@@ -50,7 +51,7 @@ function AboutVisual() {
       />
 
       {/* Blob canvas — bottom right */}
-      {/* <CardBlob /> */}
+      <BlobCanvas />
 
       {/* Initials */}
       <span
