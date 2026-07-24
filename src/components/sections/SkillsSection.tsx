@@ -89,7 +89,7 @@ function SkillCell({ card, animate }: SkillCellProps) {
       </p>
 
       {/* Skill bar */}
-      <div className="h-[3px] bg-white/[0.08] rounded-full overflow-hidden">
+      {/* <div className="h-[3px] bg-white/[0.08] rounded-full overflow-hidden">
         <div
           className="h-full bg-lime rounded-full transition-transform duration-[1000ms] ease-[cubic-bezier(0.19,1,0.22,1)]"
           style={{
@@ -98,7 +98,7 @@ function SkillCell({ card, animate }: SkillCellProps) {
             transformOrigin: "left",
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

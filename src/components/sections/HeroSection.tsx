@@ -77,7 +77,7 @@ function HeroTerminal() {
               <span className="text-text-muted text-[13px] font-mono">cat stack.txt</span>
             </div>
             <div className="pl-4 border-l border-white/10 flex flex-wrap gap-2 mt-1">
-              {["MERN","MENN", "Python", "LangChain","LangGraph", "LangSmith", "n8n", "FastAPI", "TypeScript"].map((t) => (
+              {["MERN","Nextjs", "TypeScript", "Python", "FastAPI",  "LangChain","LangGraph", "LangSmith", "RAG", "n8n", ].map((t) => (
                 <span
                   key={t}
                   className="text-[11px] font-mono px-2.5 py-1 rounded-md border"

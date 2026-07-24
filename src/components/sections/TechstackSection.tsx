@@ -206,7 +206,7 @@ export default function TechStackSection() {
         ))}
       </div>
 
-      <Ticker />
+      {/* <Ticker /> */}
     </section>
   );
 }
