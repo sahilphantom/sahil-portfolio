@@ -162,22 +162,7 @@ export const PROJECTS: Project[] = [
       { label: "View Project", href: "https://www.pindeats.com/", accent: true, accentColor: "coral" },
     ],
   },
-  {
-    id: "vizztube",
-    emoji: "📊",
-    thumbBg:
-      "linear-gradient(135deg, #050a10 0%, rgba(181,123,255,0.12) 100%)",
-    image: "/images/vizztube.png",
-    category: "SaaS / Analytics",
-    categoryColor: "lime",
-    title: "VizzTube",
-    description:
-      "Full-stack YouTube analytics platform with video search, channel insights, Stripe subscriptions, role-based access, and a bilingual (Japanese–English) UI.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-    links: [
-      { label: "View Project", href: "https://youtube-research.netlify.app/", accent: true, accentColor: "lime" },
-    ],
-  },
+  
   {
     id: "urdulens",
     
