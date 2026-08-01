@@ -61,7 +61,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-bg text-text font-instrument antialiased overflow-x-hidden">
-       {/* <CustomCursor /> */}
+       <CustomCursor />
         {children}
       </body>
     </html>
